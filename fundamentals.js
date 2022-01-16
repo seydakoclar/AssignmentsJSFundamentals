@@ -97,3 +97,29 @@ if (population > 33) {
 else {
     console.log(`${country}'s population is ${33 - population} million below average.`);
 }
+
+/*
+ASSIGNMENT 7
+1. Predict the result of these 5 operations without executing them:
+'9' - '5';
+'19' - '13' + '17';
+'19' - '13' + 17;
+'123' < 57;
+5 + 6 + '4' + 9 - 4 - 2;
+2. Execute the operations to check if you were right
+*/
+
+/*
+GUESSES
+'9' - '5' = 4
+'19' - '13' + '17' = '617'
+'19' - '13' + 17 = 23
+'123' < 57 = false
+5 + 6 + '4' + 9 - 4 - 2 = '1143'
+*/
+
+console.log('9' - '5');                     //corret guess
+console.log('19' - '13' + '17');            //correct gues
+console.log('19' - '13' + 17);              //correct gues
+console.log('123' < 57);                    //correct gues
+console.log(5 + 6 + '4' + 9 - 4 - 2);       //correct gues
