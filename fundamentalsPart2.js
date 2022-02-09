@@ -67,8 +67,8 @@ ASSIGNMENT 3
 
 const percentageOfWorld3 = _population => (_population / worldPopulation) * 100;
 
-const finlandPopulationPercentage3 = percentageOfWorld2(6);
-const turkeyPopulationPercentage3 = percentageOfWorld2(80);
-const polandPopulationPercentage3 = percentageOfWorld2(38);
+const finlandPopulationPercentage3 = percentageOfWorld3(6);
+const turkeyPopulationPercentage3 = percentageOfWorld3(80);
+const polandPopulationPercentage3 = percentageOfWorld3(38);
 
 console.log(finlandPopulationPercentage3, turkeyPopulationPercentage3, polandPopulationPercentage3);
