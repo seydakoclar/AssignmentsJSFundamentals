@@ -58,3 +58,17 @@ const turkeyPopulationPercentage2 = percentageOfWorld2(80);
 const polandPopulationPercentage2 = percentageOfWorld2(38);
 
 console.log(finlandPopulationPercentage2, turkeyPopulationPercentage2, polandPopulationPercentage2);
+
+/* 
+ASSIGNMENT 3
+1. Recreate the last assignment, but this time create an arrow function called
+'percentageOfWorld3'
+*/
+
+const percentageOfWorld3 = _population => (_population / worldPopulation) * 100;
+
+const finlandPopulationPercentage3 = percentageOfWorld2(6);
+const turkeyPopulationPercentage3 = percentageOfWorld2(80);
+const polandPopulationPercentage3 = percentageOfWorld2(38);
+
+console.log(finlandPopulationPercentage3, turkeyPopulationPercentage3, polandPopulationPercentage3);
