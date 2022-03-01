@@ -9,15 +9,15 @@ returned values in 3 different variables, and log them to the console
 */
 
 //uncomment to activate strict mode for security
-//'use strict'; 
+//'use strict';
 
 function describeCountry(_country, _population, _capitalCity) {
-    return `${_country} has ${_population} million peopleand its capital city is ${_capitalCity}`;
+  return `${_country} has ${_population} million peopleand its capital city is ${_capitalCity}`;
 }
 
-const finland = describeCountry('Finland', 6, 'Helsinki');
-const turkey = describeCountry('Turkey', 80, 'Ankara');
-const poland = describeCountry('Poland', 38, 'Warsaw');
+const finland = describeCountry("Finland", 6, "Helsinki");
+const turkey = describeCountry("Turkey", 80, "Ankara");
+const poland = describeCountry("Poland", 38, "Warsaw");
 
 console.log(finland);
 console.log(turkey);
@@ -40,24 +40,32 @@ the same populations)
 */
 const worldPopulation = 7900;
 function percentageOfWorld1(_population) {
-    return (_population / worldPopulation) * 100;
+  return (_population / worldPopulation) * 100;
 }
 
 const finlandPopulationPercentage1 = percentageOfWorld1(6);
 const turkeyPopulationPercentage1 = percentageOfWorld1(80);
 const polandPopulationPercentage1 = percentageOfWorld1(38);
 
-console.log(finlandPopulationPercentage1, turkeyPopulationPercentage1, polandPopulationPercentage1);
+console.log(
+  finlandPopulationPercentage1,
+  turkeyPopulationPercentage1,
+  polandPopulationPercentage1
+);
 
 const percentageOfWorld2 = function (_population) {
-    return (_population / worldPopulation) * 100;
-}
+  return (_population / worldPopulation) * 100;
+};
 
 const finlandPopulationPercentage2 = percentageOfWorld2(6);
 const turkeyPopulationPercentage2 = percentageOfWorld2(80);
 const polandPopulationPercentage2 = percentageOfWorld2(38);
 
-console.log(finlandPopulationPercentage2, turkeyPopulationPercentage2, polandPopulationPercentage2);
+console.log(
+  finlandPopulationPercentage2,
+  turkeyPopulationPercentage2,
+  polandPopulationPercentage2
+);
 
 /* 
 ASSIGNMENT 3
@@ -65,13 +73,18 @@ ASSIGNMENT 3
 'percentageOfWorld3'
 */
 
-const percentageOfWorld3 = _population => (_population / worldPopulation) * 100;
+const percentageOfWorld3 = (_population) =>
+  (_population / worldPopulation) * 100;
 
 const finlandPopulationPercentage3 = percentageOfWorld3(6);
 const turkeyPopulationPercentage3 = percentageOfWorld3(80);
 const polandPopulationPercentage3 = percentageOfWorld3(38);
 
-console.log(finlandPopulationPercentage3, turkeyPopulationPercentage3, polandPopulationPercentage3);
+console.log(
+  finlandPopulationPercentage3,
+  turkeyPopulationPercentage3,
+  polandPopulationPercentage3
+);
 
 /*
 ASSIGNMENT 4
@@ -85,10 +98,33 @@ which is about 18.2% of the world.'
 */
 
 const describePopulation = function (_country, _population) {
-    const percentage = percentageOfWorld1(_population);
-    return `${_country} has ${_population} million people, which is about ${percentage}% of the world`;
-}
+  const percentage = percentageOfWorld1(_population);
+  return `${_country} has ${_population} million people, which is about ${percentage}% of the world`;
+};
 
-describePopulation('Finland', 6);
-describePopulation('Turkey', 80);
-describePopulation('Poland', 38);
+describePopulation("Finland", 6);
+describePopulation("Turkey", 80);
+describePopulation("Poland", 38);
+
+/*
+ASSIGNMENT 5
+1. Create an array containing 4 population values of 4 countries of your choice.
+You may use the values you have been using previously. Store this array into a
+variable called 'populations'
+2. Log to the console whether the array has 4 elements or not (true or false)
+3. Create an array called 'percentages' containing the percentages of the
+world population for these 4 population values. Use the function
+'percentageOfWorld1' that you created earlier to compute the 4
+percentage values
+*/
+
+const populations = [80, 6, 38, 9];
+
+console.log(populations.length === 4);
+
+const percentages = [
+  percentageOfWorld1(80),
+  percentageOfWorld1(6),
+  percentageOfWorld1(38),
+  percentageOfWorld1(9),
+];
